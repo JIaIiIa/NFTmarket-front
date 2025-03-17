@@ -1,0 +1,151 @@
+@use "variables";
+
+.header__inner {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    position: relative;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: "Space Mono", sans-serif;
+    color: variables.$text-color;
+    font-size: 20px;
+}
+
+.header__nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    &.active {
+        width: 35%;
+        background: linear-gradient(to top, #4e3434, #504141);
+        z-index: 10;
+        transition: all 0.3s ease;
+        gap: 100px;
+        transform: translateX(0);
+    }
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.header__link {
+    color: variables.$text-color;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.header__btn {
+    width: 152px;
+}
+
+.burger-button {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: none;
+    z-index: 100;
+
+    & span {
+        display: block;
+        width: 70%;
+        height: 1.5px;
+        background-color: variables.$text-color;
+        border-radius: 15px;
+        position: absolute;
+        left: 0;
+        top: 3px;
+        transition: all 0.3s ease;
+
+    }
+
+    & span:nth-child(2) {
+        width: 100%;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+
+    & span:nth-child(3) {
+        width: 70%;
+        top: unset;
+        bottom: 3px;
+    }
+
+    &.active {
+
+
+        & span:nth-child(1) {
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        & span:nth-child(2) {
+            animation: span-move 0.3s ease forwards;
+        }
+
+        & span:nth-child(3) {
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+    }
+
+    &.active-reverse {
+        & span:nth-child(2) {
+            animation: span-move-reverse 0.3s ease forwards;
+        }
+
+    }
+
+
+}
+
+@keyframes span-move {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(50%);
+    }
+
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes span-move-reverse {
+    0% {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(50%);
+    }
+
+    100% {
+        transform: translateX(0);
+
+    }
+}

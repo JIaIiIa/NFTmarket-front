@@ -1,0 +1,79 @@
+@use "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: variables.$background-color;
+
+    &.stop-scroll {
+        overflow: hidden;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: variables.$text-color;
+    font-style: normal;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 67px;
+}
+
+h5 {
+    color: variables.$text-color;
+    font-family: "Work Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 115px;
+
+    &.header {
+        padding: 0 50px;
+    }
+}
+
+.main-text {
+    color: variables.$text-color;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.small-text {
+    color: variables.$text-color;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}

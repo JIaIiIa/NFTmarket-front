@@ -1,0 +1,90 @@
+@use "variables";
+
+.hero__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__inner-left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+.hero__title {
+    max-width: 510px;
+}
+
+.hero__text {
+    max-width: 510px;
+}
+
+.hero__btn {
+    width: 224px;
+}
+
+.wrapper__hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero__info-title {
+    color: variables.$text-color;
+    font-family: "Space Mono";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+.hero__info-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero__info-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__inner-right {
+    width: 50%;
+}
+
+.sell-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.sell-card__img {
+    aspect-ratio: 510/401;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.sell-card__owner {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.sell-card__info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    background: #3B3B3B;
+}
+
+.sell-card__avatar {
+    aspect-ratio: 24/24;
+    max-width: 24px;
+    object-fit: cover;
+    border-radius: 50%;
+}

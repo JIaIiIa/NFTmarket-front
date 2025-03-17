@@ -1,0 +1,25 @@
+@use "variables";
+
+$main-btn-color: #A259FF;
+
+.main-button {
+    border-radius: 20px;
+    background: $main-btn-color;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: variables.$text-color;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    cursor: pointer;
+    border: none;
+
+    &.transparent {
+        border: 2px solid $main-btn-color;
+        background-color: transparent;
+    }
+}
