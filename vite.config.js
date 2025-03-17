@@ -5,4 +5,5 @@ export default defineConfig({
     port: 3000, // Укажите нужный порт
     open: true, // Автоматически открывать в браузере
   },
+  base: '/NFTmarket-Pages/',
 });
