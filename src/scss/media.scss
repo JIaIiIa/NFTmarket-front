@@ -1,4 +1,17 @@
 @media (max-width: 1200px) {
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .main-text {
+        font-size: 20px;
+    }
+
+    .hero__info-title {
+        font-size: 24px;
+    }
+
     .container {
         padding: 0 72px;
 
@@ -33,6 +46,15 @@
 }
 
 @media (max-width: 900px) {
+
+    .header__inner {
+        height: 54px;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
     .burger-button {
         display: block;
     }
@@ -52,12 +74,55 @@
             gap: 30px;
         }
     }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    .main-text {
+        font-size: 16px;
+    }
+
+    .hero__info-title {
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 600px) {
+
+    .container {
+        padding: 0 30px;
+
+        &.header {
+            padding: 0 30px;
+        }
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+    
     .header__nav {
         &.active {
             width: 65%;
         }
+    }
+
+    .hero__inner {
+        flex-direction: column-reverse;
+        gap: 40px;
+
+        &-left {
+            width: 100%;
+        }
+
+        &-right {
+            width: 100%;
+        }
+    }
+
+    .hero__info-list {
+        justify-content: space-between;
+        gap: unset;
     }
 }

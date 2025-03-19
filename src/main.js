@@ -26,5 +26,6 @@ document.addEventListener('click', (event) => {
   if (!isClickInsideNav && !isClickOnBurger) {
     nav.classList.remove('active');
     burger.classList.remove('active', 'active-reverse');
-  }
+    stopScroll.classList.remove('stop-scroll');
+  } 
 });
