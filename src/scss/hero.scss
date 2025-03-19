@@ -2,16 +2,30 @@
 
 .hero__inner {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
     gap: 30px;
+    
+}
+
+.mansory-test {
+    width: calc(100% / 2 - 15px);
 }
 
 .hero__inner-left {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    width: 50%;
-    
+}
+
+.hero__inner-right {
+    order: 2;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .hero__text {
@@ -48,9 +62,7 @@
     flex-direction: column;
 }
 
-.hero__inner-right {
-    width: 50%;
-}
+
 
 .sell-card {
     display: flex;
