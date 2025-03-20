@@ -72,7 +72,7 @@ const swiperCards = new Swiper( '.collection__cards'
       spaceBetween: 30,
     },
     0: {
-      slidesPerView: 1,
+      slidesPerView: 1.2,
       spaceBetween: 30,
     },
     }
