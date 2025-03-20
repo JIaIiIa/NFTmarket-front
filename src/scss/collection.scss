@@ -1,0 +1,63 @@
+@use "variables";
+
+.collection__cards {
+    margin-top: 60px ;
+    overflow: hidden;
+   
+
+    & .swiper-slide {
+        display: flex;
+    }
+}
+
+.collection__card {
+    width: calc(100% / 3 - 15px);
+    align-self: baseline;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    & img {
+        aspect-ratio: 330/330;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    & .sell-card__info {
+        padding: unset;
+        background-color: transparent;
+    }
+}
+
+.collection__card-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+
+    & .collection__card-img--small {
+        width: calc(100% / 3 - 15px);
+        aspect-ratio: 100/100;
+        border-radius: 20px;
+
+        &.btn-img {
+            border: none;
+            background-color: #A259FF;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: variables.$text-color;
+            font-family: "Space Mono";
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 160%;
+        }
+    }
+}
+
+.collection__text {
+    margin-top: 10px;
+}

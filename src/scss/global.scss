@@ -30,6 +30,12 @@ h1 {
     font-size: 67px;
 }
 
+h2 {
+    color: variables.$text-color;
+    font-size: 38px;
+    line-height: 120%;
+}
+
 h5 {
     color: variables.$text-color;
     font-family: "Work Sans";

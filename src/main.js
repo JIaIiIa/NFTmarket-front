@@ -1,5 +1,7 @@
 import './style.css'
 import './scss/main.scss'
+import Swiper from 'swiper';
+import 'swiper/css';
 
 const burger = document.querySelector('.burger-button');
 const nav = document.querySelector('.header__nav');
@@ -55,6 +57,26 @@ function handleResize() {
 // Инициализируем при загрузке страницы
 window.addEventListener('load', handleResize);
 window.addEventListener('resize', handleResize);
+
+const swiperCards = new Swiper( '.collection__cards'
+, {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  breakpoints: {
+    900: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+    }
+});
 
 
 

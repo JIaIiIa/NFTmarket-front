@@ -45,6 +45,12 @@
     }
 }
 
+@media (max-width: 1024px) and (min-width: 900px) { 
+    .collection__card-items .collection__card-img--small.btn-img {
+        font-size: 16px;
+    }
+}
+
 @media (max-width: 900px) {
 
     .header__inner {
