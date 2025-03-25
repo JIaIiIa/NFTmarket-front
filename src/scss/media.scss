@@ -77,6 +77,10 @@
     h2 {
         font-size: 28px;
     }
+
+    .categories__text {
+        padding: 15px;
+    }
 }
 
 @media (max-width: 1024px) and (min-width: 900px) {
@@ -126,6 +130,10 @@
 
     .hero__info-title {
         font-size: 22px;
+    }
+
+    .categories__item .categories__img-category {
+        max-width: 80px;
     }
 }
 
@@ -187,6 +195,10 @@
 
     .hero__inner-right {
         order: 0;
+    }
+
+    .categories__items {
+        grid-template-columns: repeat(2, 1fr);
     }
     
 }
