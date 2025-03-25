@@ -17,6 +17,8 @@ $main-btn-color: #A259FF;
     line-height: 140%;
     cursor: pointer;
     border: none;
+    padding: 5px 50px;
+    align-self: baseline;
 
     &.transparent {
         border: 2px solid $main-btn-color;

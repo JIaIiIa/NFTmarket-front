@@ -39,15 +39,8 @@
     }
 
     .main-button {
-        height: 40px;
-    }
-
-    .header__btn {
-        width: 120px;
-    }
-
-    .hero__btn {
-        width: 160px;
+        height: unset;
+        padding: 10px 25px;
     }
 
     .header__logo {
@@ -56,10 +49,6 @@
         & img {
             width: 24px;
         }
-    }
-
-    .creators__button {
-        width: 175px;
     }
 }
 
